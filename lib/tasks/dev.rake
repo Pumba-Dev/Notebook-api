@@ -43,7 +43,7 @@ namespace :dev do
 
       puts "Setup Adresses"
       Contact.all.each do |contact|
-        adress = Adress.create!(
+        Adress.create!(
           street: Faker::Address.street_name,
           city: Faker::Address.city,
           contact: contact

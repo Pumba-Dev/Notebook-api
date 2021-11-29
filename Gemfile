@@ -9,6 +9,8 @@ gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 gem 'rails-i18n', '~> 6.0.0' # For 6.0.0 or higher
 # This is a small gem which causes rails console to open pry. It therefore depends on pry.
 gem 'pry-rails', :group => :development
+# ActiveModel::Serializer implementation and Rails hooks
+gem 'active_model_serializers', '~> 0.10.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
