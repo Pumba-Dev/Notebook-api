@@ -7,6 +7,8 @@ ruby '3.0.2'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 # Repository for collecting Locale data for Ruby on Rails I18n as well as other interesting, Rails related I18n stuff
 gem 'rails-i18n', '~> 6.0.0' # For 6.0.0 or higher
+# This is a small gem which causes rails console to open pry. It therefore depends on pry.
+gem 'pry-rails', :group => :development
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
