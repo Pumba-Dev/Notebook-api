@@ -7,8 +7,11 @@ Rails.application.routes.draw do
     resource :phones, only: [:show]
     resource :phones, only: [:show], path: 'relationships/phones'
 
-    resource :adress, only: [:show]
-    resource :adress, only: [:show], path: 'relationships/adress'
+    resource :phone, only: [:update, :create, :destroy]
+    resource :phone, only: [:update, :create, :destroy], path: 'relationships/phones'
+
+    resource :adress, only: [:show, :update, :create, :destroy]
+    resource :adress, only: [:show, :update, :create, :destroy], path: 'relationships/adress'
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
