@@ -41,7 +41,12 @@ class KindsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_kind
-      @kind = Kind.find(params[:id])
+      if params[:contact_id]
+        kind_id = Contact.find(params[:contact_id]).kind_id
+        @kind = Kind.find(kind_id)
+      else
+        @kind = Kind.find(params[:id])
+      end
     end
 
     # Only allow a list of trusted parameters through.
